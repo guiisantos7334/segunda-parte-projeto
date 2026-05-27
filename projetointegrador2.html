@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ========================================================
+       NÍVEL 2 — PÁGINA INTERATIVA
+       Liga STEAM / ArcelorMittal
+       ========================================================
+       Esta é a vara. Você pesca.
+
+       O QUE FAZER:
+       1. Estruture a página (HTML)
+       2. Estilize (CSS)
+       3. Faça a página REAGIR ao usuário (JavaScript)
+
+       Sugestões do que pode ser a interação:
+       - Botão que mostra/esconde uma curiosidade
+       - Contador de visitantes
+       - Quiz com 3 perguntas que conta acertos
+       - Botão que troca o tema (claro/escuro)
+       - Botão que troca a frase principal aleatoriamente
+       ======================================================== -->
+
+  <title>Aço Sustentável</title>
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Aço Sustentável</h1>
+   <nav>
+    <a href="#">Quem Somos</a>
+    <a href="#">Projetos</a>
+    <a href="#">Sustentabilidade</a>
+    <a href="#">Contato</a>
+  </nav>
+  </header>
+
+  <main>
+    <img src="imagem2.png" alt="Sustentabilidade na indústria">
+    <section>
+        <h2>O futuro da indústria</h2>
+        <p>Empresas como a ArcelorMittal estão investindo em tecnologias sustentáveis
+    para reduzir a poluição e produzir aço de maneira mais limpa.
+    O uso de energia renovável e reciclagem ajuda a preservar o meio ambiente.
+        </p>
+     </section>
+
+    <!-- ========================================================
+         BLOCO INTERATIVO — o coração do seu projeto
+         ======================================================== -->
+    <section class="interativo">
+
+      <h2>Quer descobrir uma curiosidade?</h2>
+
+      <button id="botao-acao">
+        Mostrar curiosidade
+      </button>
+
+      <!-- O bloco que vai aparecer/sumir/atualizar quando o botão for clicado.
+           Começa escondido (classe "escondido"). -->
+      <div id="resposta" class="escondido">
+        O aço sustentável ajuda a reduzir a poluição e pode ser reciclado várias vezes sem perder qualidade.
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Feito por Guilherme Henrique · Liga STEAM · 2026</p>
+  </footer>
+
+  <!-- ========================================================
+       JAVASCRIPT — onde a página ganha vida
+       ======================================================== -->
+  <script>
+    // PASSO 1: encontrar o botão na página
+    const botao = document.getElementById('botao-acao');
+
+    // PASSO 2: encontrar o bloco que vai aparecer/sumir
+    const resposta = document.getElementById('resposta');
+
+    // PASSO 3: dizer pro botão "quando alguém clicar em você, faça isso"
+    botao.addEventListener('click', function() {
+      // TODO: o que deve acontecer quando o botão for clicado?
+      //
+      // Exemplo (mostrar/esconder o bloco resposta):
+      //   resposta.classList.toggle('escondido');
+      //
+      // Exemplo (contador):
+      //   contador = contador + 1;
+      //   resposta.textContent = 'Você clicou ' + contador + ' vezes!';
+      //
+      // Sua vez:
+
+    });
+
+  </script>
+
+</body>
+</html>
