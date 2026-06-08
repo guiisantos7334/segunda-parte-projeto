@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esqueletos HTML iniciais para o Projeto Integrador da Liga STEAM / ArcelorMittal — três níveis.">
+  <title>Esqueletos · Projeto Integrador · Liga STEAM</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #0a6847 0%, #1a3c34 100%);
+      color: #1a202c;
+      min-height: 100vh;
+    }
+
+    .topo { text-align: center; padding: 4rem 1.5rem 2rem; color: white; }
+    .etiqueta {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .topo h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); margin-bottom: 1rem; line-height: 1.2; }
+    .topo p {
+      opacity: 0.9;
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .conteudo { max-width: 1100px; margin: 0 auto; padding: 1rem 1.5rem 4rem; }
+
+    .nota {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      color: white;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+      backdrop-filter: blur(10px);
+    }
+    .nota strong { color: #fbd38d; }
+    .nota code {
+      background: rgba(0,0,0,0.25);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem 1.75rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+    }
+    .card__numero {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #0a6847;
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      font-family: Georgia, serif;
+    }
+    .card__nivel {
+      display: inline-block;
+      background: #e6f4ea;
+      color: #0a6847;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      align-self: flex-start;
+    }
+    .card h2 {
+      color: #1a3c34;
+      font-size: 1.35rem;
+      margin-bottom: 0.5rem;
+    }
+    .card__sub {
+      color: #4a5568;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    .card__desc {
+      color: #4a5568;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+    .card__tec {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 1.25rem;
+    }
+    .tec {
+      background: #f7fafc;
+      color: #4a5568;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card__acoes {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .botao {
+      flex: 1;
+      min-width: 130px;
+      text-align: center;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .botao:hover { transform: translateY(-2px); }
+    .botao--principal {
+      background: #0a6847;
+      color: white;
+    }
+    .botao--principal:hover { box-shadow: 0 6px 16px rgba(10, 104, 71, 0.4); }
+    .botao--secundario {
+      background: #f7fafc;
+      color: #1a3c34;
+      border: 1px solid #e2e8f0;
+    }
+    .botao--secundario:hover { background: #edf2f7; }
+
+    .rodape { text-align: center; color: rgba(255,255,255,0.7); padding: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header class="topo">
+    <span class="etiqueta">Ponto de partida</span>
+    <h1>Esqueletos do Projeto Integrador</h1>
+    <p>Cada arquivo é a <strong>vara de pesca</strong> do seu nível: a estrutura HTML mínima e os comentários guiando onde você preenche o que falta. Baixe o do seu nível, abra num editor de texto e comece a construir.</p>
+  </header>
+
+  <main class="conteudo">
+
+    <div class="nota">
+      <strong>Como usar:</strong> clique em <em>Baixar</em> pra salvar o arquivo no seu computador. Abra ele com qualquer editor de texto (VS Code, Notepad++, Sublime). Os comentários <code>&lt;!-- TODO --&gt;</code> indicam onde você deve preencher.
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card__numero">1</div>
+        <span class="card__nivel">Nível 1</span>
+        <h2>Cartaz Digital</h2>
+        <p class="card__sub">Para quem está chegando agora</p>
+        <p class="card__desc">Estrutura mínima de uma página HTML com cabeçalho, conteúdo e rodapé. Comentários guiam onde colocar título, imagem e texto principal.</p>
+        <div class="card__tec">
+          <span class="tec">HTML</span>
+          <span class="tec">CSS</span>
+        </div>
+        <div class="card__acoes">
+          <a href="nivel-1-cartaz-digital.html" class="botao botao--secundario" target="_blank">Visualizar</a>
+          <a href="nivel-1-cartaz-digital.html" download class="botao botao--principal">Baixar arquivo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__numero">2</div>
+        <span class="card__nivel">Nível 2</span>
+        <h2>Página Interativa</h2>
+        <p class="card__sub">Para quem já mexeu em HTML/CSS</p>
+        <p class="card__desc">HTML estruturado, um botão pronto e uma função JavaScript vazia esperando você dar vida a ela — mostrar/esconder, contador, troca de tema, quiz.</p>
+        <div class="card__tec">
+          <span class="tec">HTML</span>
+          <span class="tec">CSS</span>
+          <span class="tec">JS básico</span>
+        </div>
+        <div class="card__acoes">
+          <a href="nivel-2-pagina-interativa.html" class="botao botao--secundario" target="_blank">Visualizar</a>
+          <a href="nivel-2-pagina-interativa.html" download class="botao botao--principal">Baixar arquivo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__numero">3</div>
+        <span class="card__nivel">Nível 3</span>
+        <h2>Site Completo</h2>
+        <p class="card__sub">Para quem já programa em JavaScript</p>
+        <p class="card__desc">Arquitetura do site com 8 funções declaradas e vazias (filtrar, validar, salvar, pontuar...). Cada uma com comentários da ordem certa de implementação.</p>
+        <div class="card__tec">
+          <span class="tec">HTML</span>
+          <span class="tec">CSS+</span>
+          <span class="tec">JS ES6</span>
+        </div>
+        <div class="card__acoes">
+          <a href="nivel-3-site-completo.html" class="botao botao--secundario" target="_blank">Visualizar</a>
+          <a href="nivel-3-site-completo.html" download class="botao botao--principal">Baixar arquivo</a>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Liga STEAM · ArcelorMittal · Projeto Integrador · 2026</p>
+  </footer>
+
+</body>
+</html>
