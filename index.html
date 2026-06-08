@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ========================================================
+       NÍVEL 2 — PÁGINA INTERATIVA
+       Liga STEAM / ArcelorMittal
+       ========================================================
+       Esta é a vara. Você pesca.
+
+       O QUE FAZER:
+       1. Estruture a página (HTML)
+       2. Estilize (CSS)
+       3. Faça a página REAGIR ao usuário (JavaScript)
+
+       Sugestões do que pode ser a interação:
+       - Botão que mostra/esconde uma curiosidade
+       - Contador de visitantes
+       - Quiz com 3 perguntas que conta acertos
+       - Botão que troca o tema (claro/escuro)
+       - Botão que troca a frase principal aleatoriamente
+       ======================================================== -->
+
+  <title>Aço Sustentável</title>
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Aço Sustentável</h1>
+
+   <nav>
+    <a href="#quemsomos">Valores</a>
+    <a href="#aco">Aço Sustentavel</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#contato">Contato</a>
+   </nav>
+
+  </header>
+
+  <main>
+    <img class="banner" src="imagem3.png" alt="Sustentabilidade na indústria">
+
+    <div id="quemsomos" class="galeria">
+     <img src="imagemquemsomos1.png" class="imgquemsomos">
+     <img src="imagemquemsomos2.png" class="imgquemsomos">
+     <img src="imagemquemsomos3.png" class="imgquemsomos">
+    </div>
+
+     <section class="quemsomos">
+      <h1>Sustentabilidade</h1>
+      <p>
+    Produzir aço de forma responsável, reduzindo impactos ambientais e preservando recursos naturais.
+     </p>
+     </section>
+     
+     <section class="quemsomos2">
+      <h1>Inovação</h1>
+      <p>
+        Buscar constantemente novas tecnologias para tornar a produção de aço mais eficiente e sustentável.
+      </p>
+     </section>
+
+     <section class="quemsomos3">
+      <h1>Economia Circular</h1>
+      <p>Incentivar a reciclagem e o reaproveitamento de materiais para diminuir desperdícios.
+      </p>
+     </section>
+
+    <section class="interativo">
+
+      <h2>Quer descobrir uma curiosidade?</h2>
+
+      <button id="botao-acao">
+        Mostrar curiosidade
+      </button>
+      
+      <div id="resposta" class="escondido">
+        O aço sustentável ajuda a reduzir a poluição e pode ser reciclado várias vezes sem perder qualidade.
+      </div>
+
+    </section>
+
+    <section id="aco" class="aco">
+       <img class="imgaco" src="imagemacosustentavel.png" alt="Aço Sustentavel">
+       <div class="textoaco">
+        <h1><strong>Aço Sustentável</strong></h1>
+        <p>
+           O aço sustentável representa o futuro da indústria. Produzido com tecnologias mais limpas, ele busca reduzir a emissão de gases poluentes, economizar recursos naturais e incentivar a reciclagem de materiais. Como o aço pode ser reciclado diversas vezes sem perder sua qualidade, ele se torna um dos materiais mais importantes para a construção de uma economia circular.
+           Além disso, o investimento em energias renováveis e em soluções inovadoras, como o hidrogênio verde, permite que a produção de aço seja cada vez mais eficiente e responsável com o meio ambiente. Dessa forma, é possível unir desenvolvimento industrial, inovação e preservação ambiental para construir um futuro mais sustentável.
+        </p>
+    </div>
+    </section>
+    
+    <section class="quiz">
+
+      <h2>Quiz: Aço Sustentável</h2>
+
+       <p>O aço pode ser reciclado sem perder sua qualidade?</p>
+       <button id="sim">Sim</button>
+       <button id="nao">Não</button>
+       <div id="resultadoQuiz"></div>
+    </section>
+
+    <section id="sustentabilidade" class="sustentabilidade">
+      <img class="imgbanner" src="imgbanner.png" alt="Banner Sustentabilidade">
+      <div class="textosus">
+      <h1>Compromisso com um Futuro Sustentável</h1>
+      <p>Trabalhamos para produzir aço de forma responsável, investindo em inovação, reciclagem e eficiência energética. Nosso objetivo é contribuir para o desenvolvimento sustentável, preservando recursos e gerando valor para as futuras gerações.</p>
+
+            <div class="dados">
+
+    <div class="dado">
+        <h3>95%</h3>
+        <p>Materiais reciclados</p>
+    </div>
+
+    <div class="dado">
+        <h3>80%</h3>
+        <p>Água reutilizada</p>
+    </div>
+
+    <div class="dado">
+        <h3>50%</h3>
+        <p>Redução de emissões</p>
+    </div>
+
+    <div class="dado">
+        <h3>100%</h3>
+        <p>Compromisso ambiental</p>
+          </div>
+      </div> 
+    </section>
+
+    <section id="contato" class="contato">
+
+    <h1>Entre em Contato</h1>
+
+    <p>
+        Tem dúvidas, sugestões ou deseja saber mais sobre nossas soluções em aço sustentável?
+        Nossa equipe está pronta para ajudar.
+    </p>
+
+    <form id="formContato">
+
+        <input type="text" placeholder="Seu nome" required>
+
+        <input type="email" placeholder="Seu e-mail" required>
+
+        <input type="tel" placeholder="Seu telefone">
+
+        <textarea placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">
+            Enviar Mensagem
+        </button>
+
+        <div id="mensagemContato"></div>
+
+    </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Guilherme Henrique · Liga STEAM · 2026</p>
+  </footer>
+
+<script src="projetointegrador.js"></script>
+</body>
+</html>
