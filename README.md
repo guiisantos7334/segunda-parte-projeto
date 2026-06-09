@@ -28,6 +28,7 @@ A aplicação apresenta conteúdos relacionados à sustentabilidade, inovação 
 
 ## Estrutura do Projeto
 
+```
 Aco-Sustentavel/
 │
 ├── index.html
@@ -40,4 +41,4 @@ Aco-Sustentavel/
 ├── imagemquemsomos3.png
 ├── imagemacosustentavel.png
 └── imgbanner.png
-
+```
