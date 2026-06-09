@@ -1,5 +1,3 @@
-# Projeto integrador / Aço sustentavel
-
 # Aço Sustentável
 
 Landing page desenvolvida como projeto da formação Liga STEAM, utilizando HTML, CSS e JavaScript para apresentar conceitos de sustentabilidade na indústria do aço de forma moderna, informativa e interativa.
